@@ -13,7 +13,8 @@ import { AlbumService } from '../album.service';
 
 export class AlbumDetailComponent implements OnInit {
 
-  albumId: number = null;
+  albumId: number;
+  albumToDisplay: Album;
 
   constructor(
     private route: ActivatedRoute,
