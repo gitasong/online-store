@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Album } from '../album.model';
+import { AlbumService } from '../album.service';
 
 @Component({
   selector: 'app-marketplace',
