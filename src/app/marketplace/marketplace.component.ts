@@ -6,8 +6,10 @@ import { AlbumService } from '../album.service';
 @Component({
   selector: 'app-marketplace',
   templateUrl: './marketplace.component.html',
-  styleUrls: ['./marketplace.component.css']
+  styleUrls: ['./marketplace.component.css'],
+  providers: [AlbumService]
 })
+
 export class MarketplaceComponent implements OnInit {
   albums: Album[];
 
