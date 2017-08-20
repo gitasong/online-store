@@ -8,6 +8,11 @@ import { Album } from '../album.model';
   styleUrls: ['./marketplace.component.css']
 })
 export class MarketplaceComponent implements OnInit {
+
+  constructor(private router: Router) {
+
+  }
+
   albums: Album[] = [
     new Album("Pulse", "Pink Floyd",
       "A live  album by the English progressive rock band originally released in 1995, on the label EMI in the United Kingdom.", 1),
@@ -26,8 +31,6 @@ export class MarketplaceComponent implements OnInit {
   goToDetailPage(clickedAlbum: Album) {
     this.router.navigate(['albums', clickedAlbum.id]);
   };
-
-  constructor() { }
 
   ngOnInit() {
   }
