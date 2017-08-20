@@ -11,10 +11,10 @@ import { Album } from '../album.model';
 
 export class AlbumDetailComponent implements OnInit {
 
-  constructor() { }
+  albumId: number = null;
+
+  constructor(private route: ActivatedRoute, private location: Location) {}
 
   ngOnInit() {
   }
-
-  albumId: number = null;
 }
