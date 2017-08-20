@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 import { Location } from '@angular/common';
 import { Album } from '../album.model';
+import { AlbumService } from '../album.service';
 
 @Component({
   selector: 'app-album-detail',
