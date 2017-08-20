@@ -15,7 +15,11 @@ export class AlbumDetailComponent implements OnInit {
 
   albumId: number = null;
 
-  constructor(private route: ActivatedRoute, private location: Location) {}
+  constructor(
+    private route: ActivatedRoute,
+    private location: Location,
+    private albumService: AlbumService
+  ) {}
 
   ngOnInit() {
     this.route.params.forEach((urlParameters) => {
