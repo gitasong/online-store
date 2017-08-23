@@ -12,7 +12,7 @@ export class AlbumService {
   }
 
   getAlbums() {
-    return ALBUMS;
+    return this.albums;
   }
 
   getAlbumById(albumId: number){
