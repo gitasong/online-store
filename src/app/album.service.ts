@@ -7,7 +7,9 @@ import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/databa
 export class AlbumService {
   albums: FirebaseListObservable<any[]>;
 
-  constructor(private database: AngularFireDatabase) { }
+  constructor(private database: AngularFireDatabase) {
+    this.albums = database.list('albums');
+  }
 
   getAlbums() {
     return ALBUMS;
