@@ -15,12 +15,12 @@ export class AlbumService {
     return this.albums;
   }
 
-  getAlbumById(albumId: number){
-    for (var i = 0; i <= ALBUMS.length - 1; i++) {
-      if (ALBUMS[i].id === albumId) {
-        return ALBUMS[i];
-      }
-    }
-  }
+  // getAlbumById(albumId: number){
+  //   for (var i = 0; i <= ALBUMS.length - 1; i++) {
+  //     if (ALBUMS[i].id === albumId) {
+  //       return ALBUMS[i];
+  //     }
+  //   }
+  // }
 
 }
