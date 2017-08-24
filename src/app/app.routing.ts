@@ -20,12 +20,12 @@ const appRoutes: Routes = [
     component: MarketplaceComponent
   },
   {
-    path: 'admin',
-    component: AdminComponent
-  },
-  {
     path: 'albums/:id',
     component: AlbumDetailComponent
+  },
+  {
+    path: 'admin',
+    component: AdminComponent
   }
 ];
 
