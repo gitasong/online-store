@@ -10,7 +10,7 @@ import { Album } from '../album.model';
 })
 export class AdminComponent implements OnInit {
 
-  constructor(public title: string, public artist: string, public description: string) { }
+  constructor() { }
 
   ngOnInit() {
   }
